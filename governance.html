@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="用交互式数据可视化理解人工智能作为新质生产力的作用机制、现实成效与治理边界。" />
+  <meta name="theme-color" content="#06101f" />
+  <title>风险治理｜智涌新质</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2306101f'/%3E%3Cpath d='M14 43 26 19l8 14 6-10 10 20' fill='none' stroke='%2359e6d2' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='26' cy='19' r='4' fill='%237ca7ff'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="./styles.css" />
+<link rel="stylesheet" href="./sunny-theme.css" /></head>
+<body class="detail-page"><div class="scroll-progress"><span id="progressBar"></span></div><header class="topbar"><a class="brand" href="./index.html"> <span class="brand-mark">NQ</span>智涌新质</a><a class="home-link" href="./index.html">← 返回总览</a><button class="motion-toggle" id="motionToggle" type="button">减少动态</button></header><main><section id="governance" class="section governance-section"><div class="level-trail"><a href="./index.html">← 探索地图</a><span>关卡 10 / 12</span><a href="./jobs.html">下一关 →</a></div>
+      <div class="section-heading reveal">
+        <p class="chapter">09 / 治理边界</p>
+        <h2>越有力量，越需要方向</h2>
+      </div>
+      <div class="risk-layout">
+        <div class="risk-matrix reveal" id="riskMatrix" aria-label="人工智能风险矩阵">
+          <div class="axis y">影响程度</div><div class="axis x">发生可能性</div>
+          <div class="risk-grid" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <button type="button" style="--x:78%;--y:75%" data-risk="privacy">数据与隐私</button>
+          <button type="button" style="--x:61%;--y:60%" data-risk="bias">算法偏见</button>
+          <button type="button" style="--x:82%;--y:43%" data-risk="content">虚假内容</button>
+          <button type="button" style="--x:48%;--y:82%" data-risk="jobs">就业转型</button>
+          <button type="button" style="--x:66%;--y:28%" data-risk="energy">能源消耗</button>
+          <button type="button" style="--x:35%;--y:55%" data-risk="divide">技术鸿沟</button>
+        </div>
+        <article class="risk-detail reveal" id="riskDetail" aria-live="polite"></article>
+      </div>
+    <div class="chart-gallery" id="chartGallery" data-stage="governance"></div><a class="lab-entry" href="#levelLab">✦ 进入互动实验室 ↓</a></section><section class="level-lab" id="levelLab" data-stage="governance"></section><a class="next-level-button" href="./jobs.html"><span>下一关</span><b>就业影响</b><i>→</i></a></main><script src="./app.js"></script><script src="./quest.js"></script><script src="./labs.js"></script><script src="./chart-gallery.js"></script><script src="./motion.js"></script></body></html>
