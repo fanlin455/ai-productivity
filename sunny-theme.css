@@ -25,3 +25,39 @@ body,.detail-page { color:#17384e;background:#f5fbff;--cyan:#008f91;--blue:#368b
 .integrated-finale{flex-wrap:wrap}.integrated-finale .chart-gallery{flex-basis:100%}
 @media(max-width:1050px){.level-dashboard{grid-template-columns:1fr}.level-dashboard .gallery-grid{grid-template-columns:1fr 1fr}.level-dashboard .gallery-svg{max-width:520px}.level-dashboard .industry-stage,.level-dashboard .global-dashboard,.level-dashboard .impact-grid,.level-dashboard .risk-layout{grid-template-columns:1fr 1fr}}
 @media(max-width:650px){.level-dashboard .gallery-grid,.level-dashboard .industry-stage,.level-dashboard .global-dashboard,.level-dashboard .impact-grid,.level-dashboard .risk-layout{grid-template-columns:1fr}.level-dashboard{gap:16px}}
+
+/* First-level engine: explicit SVG styling and bounded responsive geometry. */
+.definition-page .next-level-button{position:relative;right:auto;bottom:auto;width:min(300px,calc(100% - 48px));margin:24px max(24px,calc((100vw - 1180px)/2)) 40px auto;z-index:1}
+.engine-lab .lab-experience{grid-template-columns:minmax(260px,.8fr) minmax(0,1.2fr);gap:28px;padding:28px;background:linear-gradient(140deg,#fff,#f4fcfc);border:1px solid #cce3eb;box-shadow:0 16px 42px #286e8a0b;min-height:0;align-items:stretch}
+.engine-lab .lab-controls{min-width:0;display:flex;flex-direction:column;gap:20px;padding:24px;background:#f1f8fc;border:1px solid #d7e9f2;border-radius:22px}
+.engine-control-title span,.engine-visual-title>span{font-size:11px;letter-spacing:.14em;color:#638ea3}
+.engine-control-title h3{margin:7px 0 0;font-size:25px;color:#234c62}
+.engine-lab .scenario-presets{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.engine-lab .scenario-presets>span{grid-column:1/-1;font-size:12px;color:#648699;margin-bottom:2px}
+.engine-lab .scenario-presets button{font:inherit;font-size:13px;font-weight:600;padding:11px 6px;border:1px solid #c5dfe9;border-radius:12px;background:#fff;color:#42728b;cursor:pointer;transition:background .2s,transform .2s,box-shadow .2s}
+.engine-lab .scenario-presets button:hover{background:#e2f5f3;transform:translateY(-2px);border-color:#63bcb6}
+.engine-lab .scenario-presets button.active{color:white;background:linear-gradient(120deg,#328dc4,#1ca69d);border-color:transparent;box-shadow:0 5px 14px #209b9f24}
+.engine-lab .lab-slider{padding:15px 17px;background:#fff;border-radius:15px;border:1px solid #dcebf2;display:grid;grid-template-columns:1fr auto;gap:14px;color:#3d6c82;font-size:14px}
+.engine-lab .lab-slider output{padding:3px 10px;border-radius:8px;font-weight:700;color:#158d92;background:#e9f7f5}
+.engine-lab .lab-slider input{grid-column:1/-1;width:100%;margin:0;appearance:none;height:7px;border-radius:8px;background:#cce4ed;cursor:pointer;accent-color:#19a69f}
+.engine-lab .lab-slider input::-webkit-slider-thumb{appearance:none;width:20px;height:20px;border:3px solid #fff;border-radius:50%;background:#1aa79f;box-shadow:0 2px 7px #1a7d8c40}
+.engine-lab .lab-slider input::-moz-range-thumb{width:15px;height:15px;border:3px solid white;border-radius:50%;background:#1aa79f}
+.engine-lab .definition-simulator{min-width:0;padding:12px 10px;display:flex;flex-direction:column;gap:18px}
+.engine-visual-title{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.engine-visual-title b{font-size:18px;color:#315b72}.engine-visual-title i{margin-left:auto;font-style:normal;font-size:11px;color:#249b8c;background:#e7f7ee;padding:5px 9px;border-radius:20px}
+.engine-lab .engine-cluster{display:grid;grid-template-columns:minmax(135px,.8fr) minmax(0,1.2fr);align-items:center;gap:20px;min-height:230px}
+.engine-lab .engine-ring{box-sizing:border-box;width:146px;height:146px;border-width:11px;margin:auto;box-shadow:0 0 0 9px #edf7fa;background:white;border-color:#8fcddd;border-top-color:#f0c464}
+.engine-lab .engine-ring::after{inset:-17px;border-color:#acdcd4}
+.engine-lab .engine-ring b{font-size:43px;line-height:1.15;color:#098f96;font-variant-numeric:tabular-nums}
+.engine-lab .engine-ring span{color:#688b9b;margin-top:7px}
+.engine-lab .triad-radar{display:block;width:100%;max-width:320px;height:auto;max-height:270px;margin:auto;overflow:visible}
+.engine-lab .radar-grid{fill:none;stroke:#cee4ee;stroke-width:1.2}
+.engine-lab .triad-shape{fill:#2bb8b34d;stroke:#1aa29f;stroke-width:2;stroke-linejoin:round;transition:d .35s ease}
+.engine-lab .triad-radar text{font:12px 'Microsoft YaHei',sans-serif;fill:#3b738b}
+.engine-lab .lab-bars>div{grid-template-columns:40px minmax(0,1fr) 32px;gap:12px}
+.engine-lab .engine-narrative{padding:17px 20px;background:#edf8f7;border-radius:15px;border:1px solid #d3eeea;color:#356b75}
+.engine-lab .engine-narrative>span{font-size:11px;color:#71979d;margin-right:12px}.engine-lab .engine-narrative strong{font-size:15px;color:#247d81}.engine-lab .engine-narrative p{font-size:13px;line-height:1.7;margin:8px 0 0;color:#648b93}
+.topbar .motion-toggle{font:inherit;font-size:12px;font-weight:600;border:1px solid #b9dae7;border-radius:12px;padding:10px 15px;background:linear-gradient(120deg,#eef8ff,#e5f6f2);color:#337a8e;box-shadow:0 3px 9px #348b9910}
+.engine-lab button:focus-visible,.engine-lab input:focus-visible,.motion-toggle:focus-visible{outline:3px solid #f1c365;outline-offset:3px}
+@media(max-width:850px){.engine-lab .lab-experience{grid-template-columns:1fr;gap:18px;padding:20px}.engine-lab .lab-controls{padding:20px}.engine-lab .engine-cluster{min-height:210px}.engine-lab .definition-simulator{padding:10px}.engine-lab .triad-radar{max-width:290px}}
+@media(max-width:460px){.engine-lab .lab-experience{padding:13px}.engine-lab .lab-controls{padding:16px}.engine-lab .engine-cluster{grid-template-columns:110px minmax(0,1fr);gap:12px;min-height:170px}.engine-lab .engine-ring{width:100px;height:100px;border-width:8px}.engine-lab .engine-ring b{font-size:31px}.engine-lab .engine-ring span{font-size:10px}.engine-lab .scenario-presets button{font-size:12px}.engine-visual-title>span{display:none}}
